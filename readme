@@ -1,0 +1,11 @@
+To compile: gcc -g -DMODEM_PART_NR_GL868 -I. gprs_main.c gl868.c -o gprs.exe
+         
+            - or - 
+         
+            gcc -g -DMODEM_PART_NR_SIM808 -I. gprs_main.c sim808.c -o gprs.exe
+
+To run: ./gprs.exe /dev/ttyS6 vodafone 52.220.99.9 30000 -f
+         
+         - or - 
+         
+        ./gprs.exe /dev/ttyS11 t-mobile 13.59.53.146 45000 -f
